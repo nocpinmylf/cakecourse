@@ -1,0 +1,165 @@
+body {
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  overflow-x: hidden;
+}
+
+button {
+  transition: all 0.3s ease;
+}
+
+a {
+  transition: all 0.3s ease;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    outline: none;
+  }
+}
+
+input,
+textarea {
+  color: $color1;
+}
+
+.wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  @include breakpoint(tablet) {
+    max-width: 100%;
+  }
+}
+
+.row {
+  display: block;
+}
+
+p {
+  line-height: 2;
+}
+
+
+// 
+
+.left-right-container {
+  width: 100%;
+}
+
+.section {
+  margin-bottom: 60px;
+}
+
+.section-title {
+  font-size: 2.2rem;
+}
+
+.content-div {
+  padding: 40px;
+}
+
+.margin-b-45 {
+  margin-bottom: 45px;
+}
+
+.margin-b-30 {
+  margin-bottom: 30px;
+}
+
+.blue-bg {
+  background-color: $color1-alt;
+  color: white;
+}
+
+.blue-text {
+  color: $color1-alt;
+}
+
+.blue-bg a {
+  color: white;
+}
+
+.button {
+  background-color: $color1-alt;
+  border: none;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.2rem;
+  padding: 15px 30px;
+
+  &-wide {
+    padding: 18px 40px;
+  }
+
+  &:active,
+  &:hover,
+  &:focus {
+    background-color: $color1;
+    color: white;
+  }
+
+  @include breakpoint(small) {
+    display: table;
+    margin: 20px auto;
+  }
+}
+
+@media (min-width: 576px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+
+  .container {
+    width: 100%;
+  }
+
+  .section {
+    margin-bottom: 100px;
+  }
+
+  .content-div {
+    padding: 80px 40px 30px 80px;
+  }
+
+  .contact-right {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 100%;
+  }
+
+  .button-wide {
+    padding: 18px 68px;
+  }
+}
+
+@media (min-width: 1500px) {
+  .container {
+    width: 100%;
+  }
+
+  p {
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 1800px) {
+
+  .container,
+  .left-right-container {
+    width: 100%;
+  }
+
+  p {
+    margin-bottom: 36px;
+  }
+}

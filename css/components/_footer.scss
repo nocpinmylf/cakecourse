@@ -1,0 +1,53 @@
+.contact-right { margin-top: 40px; }
+
+.form-control {
+	border-color: $color1-alt;
+	border-radius: 0;
+	color: $color1;
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-size: 1.3rem;
+}
+
+.contact-right {
+  padding-left: 15px;
+
+  @media (min-width: 992px) {
+    margin-top: 0;
+  }
+
+  @media (min-width: 1200px) {
+    padding-left: 42px;
+  }
+}
+.copyright-p { margin-bottom: 0; }
+
+address {
+  
+  a {
+    color: inherit;
+
+    &:hover {
+      color: $color1;
+    }
+  }
+}
+
+.social {
+  @include flex(row, center, center);
+  width: 100%;
+  
+  a {
+    color: inherit;
+  }
+
+  svg {
+    font-size: 40px;
+    transition: .2s;
+    margin: 20px;
+
+    &:hover {
+      color: $color1;
+      transform: scale(1.2);
+    }
+  }
+}
